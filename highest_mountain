@@ -9,8 +9,8 @@ int longestMountain(int *arr, int n)
     {
         if(arr[i - 1] < arr[i] and arr[i] > arr[i + 1])
         {
-            left = i - 1;
-            right = i + 1;
+            l = i - 1;
+            r = i + 1;
             while(left > 0 and arr[left - 1] < arr[left])
                 left --;
             while(right < n - 1 and arr[right] > arr[right + 1])
