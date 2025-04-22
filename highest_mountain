@@ -18,5 +18,6 @@ int longestMountain(int *arr, int n)
             m = max(m, right - left + 1);
         }
     }
-    return m >= 3 ? m : 0;
+    if(m>=3) return m;
+    return 0;
 }
